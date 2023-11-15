@@ -10,8 +10,9 @@
 
 .cart-icon {
     position: relative;
-    width: 20px;
-    height: 20px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
     background-image: url('../../assets/shopping-cart.svg');
     background-size: cover;
     transition: filter 0.3s;

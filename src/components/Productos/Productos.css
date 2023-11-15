@@ -1,0 +1,9 @@
+.myCard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+h1.text-center{color:rgb(76, 31, 97)}

@@ -1,9 +1,11 @@
 .navbar {
-    background-color: #333;
+    background-color: #1f253d;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    border-radius: 10px;
+    width: 100%;
 }
 
 .nav-menu {
@@ -22,17 +24,31 @@
     text-decoration: none;
 }
 
+.activeState{
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+    transition: 0.2s;
+}
+
+.hoverState{
+    color: #00e0fe;
+}
+
+.activeLink {
+    color: #00e0fe;
+}
+
 .logo-icon {
     position: relative;
-    top: -2px;
-    width: 60px;
-    height: 60px;
+    top: 2px;
+    width: 95px;
+    height: 95px;
     background-image: url('../../assets/logo.svg');
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .cart-widget {
-    display: flex;
+    position: relative;
     align-items: center;
-    margin-left: 30px;
 }
