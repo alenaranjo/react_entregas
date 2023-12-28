@@ -1,0 +1,40 @@
+
+
+.delete-button {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: .9rem;
+    background-color: #FFD700;
+    color: #000000;
+    transition: 0.2s ease-out;
+}
+
+.delete-button:hover {
+    background-color: #ffc003;
+    color: #fff;
+}
+
+.success-button {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: .9rem;
+    background-color: rgb(3, 234, 255);
+    color: #000000;
+    transition: 0.2s ease-out;
+}
+
+.success-button:hover {
+    background-color: rgb(3, 205, 255);
+    color: #fff;
+}
+
+.empty-button {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: .9rem;
+    background-color: rgb(255, 3, 3);
+    color: #fff;
+    transition: 0.2s ease-out;
+}
+
+.empty-button:hover {
+    background-color: rgb(207, 5, 5);
+    color: #fff;
+}

@@ -2,22 +2,39 @@
     display: flex;
     /* align-items: center; */
     /* justify-content: flex-end; */
-    margin-top: 3px;
+    margin-top: 0px;
     cursor: pointer;
     float: left;
-    padding-left:5px;
+    padding-left:0px;
 }
 
 .cart-icon {
     position: relative;
-    right: 30px;
-    width: 30px;
-    height: 30px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
     background-image: url('../../assets/shopping-cart.svg');
     background-size: cover;
     transition: filter 0.3s;
+    background-size: 100% 100%;
 }
 
 .cart-icon:hover {
     filter: brightness(0) saturate(100%) invert(72%) sepia(36%) saturate(6063%) hue-rotate(151deg) brightness(102%) contrast(109%);
+}
+
+.widget p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    color: white;
+    border-radius: 50px;
+    background: none;
+
+}
+
+.widget p:not(:empty) {
+    background: #fc0000;
 }

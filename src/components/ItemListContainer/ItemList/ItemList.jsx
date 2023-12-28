@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 import { Item } from "../Item/Item";
 import { Filter } from "./Filter";
 
@@ -26,8 +26,7 @@ const ProductFiltered = ({ productos }) => {
                     ? productos.map((product) => (
                         <Item key={product.id} product={product} />
                     ))
-                    : productos
-                        .filter((prod) =>
+                    : productos.filter((prod) =>
                             prod.name.toLowerCase().includes(filterState)
                         )
                         .map((product) => (
@@ -38,9 +37,10 @@ const ProductFiltered = ({ productos }) => {
     );
 };
 
-export const ItemList = ({ productos }) => (
+export const ItemList = memo(({ productos }) => (
     <Filter productos={productos}>
-        {ProductFiltered}
+      {ProductFiltered}
     </Filter>
-);
+  ));
+    
 

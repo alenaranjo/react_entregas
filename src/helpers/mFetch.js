@@ -20,5 +20,5 @@ const productos = [
     new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(productos);
-      }, 700);
+      }, 500);
     });

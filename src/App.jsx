@@ -7,28 +7,24 @@ import { NavBar } from './components/NavBar/NavBar';
 import { CartContainer } from './components/CartContainer/CartContainer';
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
 import { Item } from './components/ItemListContainer/Item/Item';
-// import {CategoryPage} from './components/CategoryPage/CategoryPage'
+import { createContext } from 'react';
+import { CartContextProvider } from './context/CartContext';
 
 function App() {
-  
- 
 
   return (
-
     <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/categoria/:cid" element={<Home />} />
-        <Route path="/productos" element={<Item />} />
-        <Route path="/detalle/:id" element={<ItemDetailContainer />} />
-        <Route path="/carrito" element={<CartContainer />} />
-        {/* <Route path="/categoria/:categoria" element={<CategoryPage />} /> Nueva ruta para categoría */}
-
-
-        <Route path="*" element={<Navigate to='/' />} />
-      </Routes>
-
+      <CartContextProvider>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/categoria/:cid" element={<Home />} />
+          <Route path="/productos" element={<Item />} />
+          <Route path="/detalle/:id" element={<ItemDetailContainer />} />
+          <Route path="/carrito" element={<CartContainer />} />
+          <Route path="*" element={<Navigate to='/' />} />
+        </Routes>
+      </CartContextProvider>
     </Router>
   );
 }

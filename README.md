@@ -1,8 +1,16 @@
 # React + Vite
+# Proyecto React de Productos al Estilo Amazon
+Este proyecto es una aplicación web de comercio electrónico desarrollada en React, que sigue el estilo y la funcionalidad de la plataforma de ventas en línea Amazon. La aplicación permite a los usuarios navegar por una amplia gama de productos, agregarlos al carrito de compras, y realizar pedidos.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Tecnologías Utilizadas
+React: 18.2.0
+Vite: 4.4.5
+Firebase: 10.7.0
+Características Principales
+Catálogo de Productos: Los usuarios pueden explorar una lista de productos que incluye información detallada, como nombre, descripción y precio.
 
-Currently, two official plugins are available:
+Carrito de Compras: Permite a los usuarios agregar productos al carrito, ver la cantidad seleccionada y eliminar productos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Proceso de Compra: Los usuarios pueden realizar pedidos completos, proporcionando información de contacto y confirmando su compra.
+
+Integración con Firestore: Se utiliza Firebase como base de datos para almacenar y gestionar información de productos, pedidos y detalles del usuario.

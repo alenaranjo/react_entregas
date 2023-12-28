@@ -1,0 +1,23 @@
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item img {
+    width: 25%;
+    margin-right: 10px;
+  }
+  
+  .cart-item-info {
+    flex: 1;
+  }
+  
+  .delete-button {
+    margin-left: 10px;
+  }
+  
+  .clear-cart-button {
+    margin-top: 20px;
+  }
+  
